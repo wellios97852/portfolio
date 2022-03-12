@@ -1,0 +1,89 @@
+body {background-color: #bdc3c7;}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: auto;
+    padding: 1rem;
+}
+
+main>article {
+    background-color: #999;
+    margin: 0 1rem 1rem 1rem;
+    width: 350px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 1px 15px 1px;
+
+    text-align: center;
+    font-family: "Trebuchet MS";
+    color: black;
+}
+
+
+main>article a {display: block;}
+/* When you mouse over the container, fade in the overlay title */
+main>article a:hover .overlay {opacity: 1;}
+
+main>article img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+    position: relative;
+    bottom: 76px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+main>article h2 {
+    margin-top: -76px;
+    font-size: 1.35em;
+}
+
+main>article h2+p {line-height: 1.45em;}
+
+main>article a {
+    color: #0652DD;
+    font-style: italic;
+}
+main>article a:hover,
+main>article a:active
+main>article a:focus {color: #003699;}
+
+
+
+/* Contact page style */
+main#contact {padding: 1rem 0.5rem;}
+main#contact>article {
+    margin: 1rem 0;
+    width: 100%;
+    border: unset;
+    box-shadow: 2px 1px 15px 1px;;
+}
+main#contact h2 {margin-top: 0;}
+
+
+@media (max-width: 768px) {
+    main {padding: 1rem 0.5rem;}
+    main>article {
+        margin: 1rem 0;
+        width: 100%;
+        border: unset;
+        box-shadow: 2px 1px 15px 1px;;
+    }
+    .overlay {opacity: 1;}
+}

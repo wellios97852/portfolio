@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
@@ -27,10 +33,7 @@
   color: white;
 }
 
-* {
-  box-sizing: border-box;
-}
-
+section#tmPortfolio {background-color: #efefef;}
 
 /* Center website */
 .main {
@@ -41,104 +44,4 @@
 h1 {
   font-size: 50px;
   word-break: break-all;
-}
-
-.row-project {
-  margin: 8px -16px;
-}
-
-.row-project2 {
-  margin: 8px -16px;
-  width: 100%;
-}
-
-/* Add padding BETWEEN each column (if you want) */
-.row-project,
-.row-project > .column {
-  padding: 8px;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33%;  /* 25% pour 4 projets */
-}
-
-/* Clear floats after row-projects */
-.row-project:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: #999999;
-  padding: 10px;
-}
-
-.content {}
-
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-.content p{
-  text-align: center;
-  font-family: "Trebuchet MS";
-  color: black;
-}
-
-.content h3{
-  text-align: center;
-  font-family: "Trebuchet MS";
-  color: black;
-}
-
-.container-projet {
-  position: relative;
-  width: 100%;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-h2 {
-  text-align: center;
-  color: black;
-}
-
-/* The overlay effect - lays on top of the container and over the image */
-.overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1;
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-}
-
-/* When you mouse over the container, fade in the overlay title */
-.container-projet:hover .overlay {
-  opacity: 1;
 }
